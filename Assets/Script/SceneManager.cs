@@ -8,10 +8,15 @@ public class SceneManager : MonoBehaviour {
 
 	public GameObject ShpereVideoObj;
 	public GameObject StartPanel;
-	public Button HotSpotPoint;
+	public GameObject PanelTwo;
 	[Space]
 	public List<string> VideosUrl=new List<string>();
 
+	[Space]
+
+	public Button PlayButton;
+	public Sprite PlaySprite;
+	public Sprite StopSprite;
 
 	private bool InVideoOne;
 	private VideoPlayer videoPlayer;
@@ -24,18 +29,28 @@ public class SceneManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown (KeyCode.Space)) {
+
+
+	}
+
+	public void PlayAndPuaseBut(){
+
 
 			if (videoPlayer.isPlaying) {
 				videoPlayer.Pause ();
+			PlayButton.image.sprite = PlaySprite;
 			}else{
 				videoPlayer.Play ();
+			PlayButton.image.sprite = StopSprite;
+
 			}
 
-		}
-		if (Input.GetKeyDown(KeyCode.R)) {
+		
+	}
+
+	public void RestartFuc(){
+
 			videoPlayer.time = 0;
-		}
 	}
 
 	public void ToggleVideos() { // Index -- Index of video to Play
@@ -47,7 +62,7 @@ public class SceneManager : MonoBehaviour {
 
 		ShpereVideoObj.gameObject.SetActive (true);
 		StartPanel.gameObject.SetActive(false);
-		HotSpotPoint.gameObject.SetActive (true);
+		PanelTwo.gameObject.SetActive (true);
 
 		InVideoOne = !InVideoOne;
 	}
