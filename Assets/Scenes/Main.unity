@@ -294,8 +294,8 @@ MonoBehaviour:
   StartPanel: {fileID: 900343940}
   PanelTwo: {fileID: 2047644102}
   VideosUrl:
-  - https://quizgametesting.000webhostapp.com/Lions360-Video1.mp4
-  - https://quizgametesting.000webhostapp.com/Lion360-Video2.mp4
+  - https://quizgametesting.000webhostapp.com/Video1.mp4
+  - https://quizgametesting.000webhostapp.com/Video2.mp4
   PlayButton: {fileID: 972315649}
   PlaySprite: {fileID: 21300000, guid: 983110b0394a9c8428220239ea0afbe5, type: 3}
   StopSprite: {fileID: 21300000, guid: 3af75a1daf03a544e8ca29d05798c1c0, type: 3}
@@ -4610,7 +4610,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1312065175}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 3f78ff52378a62646b4e0baa5d793d5e, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c813713285e317b48a9c816980772f00, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -4624,7 +4624,7 @@ VideoPlayer:
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
   m_TargetAudioSources:
-  - {fileID: 591554769}
+  - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
   m_Url: 
